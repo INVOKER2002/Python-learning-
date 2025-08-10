@@ -1,0 +1,25 @@
+"""@app.route('/hello',methods=['GET','POST'])
+def hello():
+    if request.method == 'GET':
+        return "<h1> Hello World  get <h1>"
+    elif request.method == 'POST':
+        return "<h1> Hello World post <h1>"
+    else:
+        return "<h1> invalid request made <h1>"
+
+@app.route('/greet/<name>') #dynamic variable  name
+def greet(name):
+    return f"hello {name}"
+
+@app.route('/add/<int:num1>/<int:num2>') #url only for integer addition
+def add(num1, num2):
+    return f"{num1} {num2}"
+
+@app.route('/handle_url_params')
+def handle_params():
+ if 'greeting' in request.args.keys() and 'name' in request.args.keys():
+    greeting = request.args['greeting']
+    name  = request.args['name']
+    return f"<h1> {greeting} {name} </h1>"
+ else:
+    return "some parameters are missing"""
